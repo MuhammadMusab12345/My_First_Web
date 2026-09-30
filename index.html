@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shale Pizzass — Premium Artisan Pizza</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader">
+    <div class="loader-pizza">
+      <img src="images/IMG-20260517-WA0017_2-removebg-preview.png" alt="Shale Pizzass Logo" class="loader-logo-img">
+    </div>
+    <div class="loader-text">Shale Pizzass</div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="images/IMG-20260517-WA0017_2-removebg-preview.png" class="brand-logo-img" alt="PizzaFire Logo">
+      Shale<span class="orange-text">Pizzass</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+
+
+
+      <li class="dropdown">
+        <a href="#menu" class="dropbtn">Menu <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#menu" onclick="filterMenuCategory('all')">All Items</a>
+          <a href="#menu" onclick="filterMenuCategory('pizza')">Pizza</a>
+          <a href="#menu" onclick="filterMenuCategory('garlic-breads')">Garlic Breads</a>
+          <a href="#menu" onclick="filterMenuCategory('sandwiches')">Pizza Sandwiches</a>
+          <a href="#menu" onclick="filterMenuCategory('desserts')">Desserts</a>
+          <a href="#menu" onclick="filterMenuCategory('beverages')">Beverages</a>
+        </div>
+      </li>
+
+
+      <li><a href="#offers">Offers</a></li>
+
+      <li><a href="#gallery">Gallery</a></li>
+
+
+      <li><a href="#testimonials">Feedback</a></li>
+
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div id="userGreeting" class="user-greeting" style="display:none"></div>
+      <a href="login.html" id="loginBtn" class="btn-nav-login">Login</a>
+      <button id="logoutBtn" class="btn-nav-login" style="display:none" onclick="logout()">Logout</button>
+      <button class="btn-order" onclick="window.location.href='order.html'">
+        Order Now 🍕
+      </button>
+
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+    <a href="#offers" onclick="closeMobileMenu()">Offers</a>
+    <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
+    <a href="#location" onclick="closeMobileMenu()">Location</a>
+    <a href="login.html" id="mobileLoginBtn">Login</a>
+  </div>
+
+
+  <!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg-blobs">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">🔥 Freshly Fired Since 2019</div>
+    <h1 class="hero-title">
+      THE PIZZA<br>
+      <span class="hero-title-accent">THAT HITS</span><br>
+      DIFFERENT
+    </h1>
+    <p class="hero-subtitle">Hand-stretched dough, premium toppings, blazing wood-fire oven. Every bite is a flame-kissed masterpiece.</p>
+    <div class="hero-cta-group">
+      <button class="btn-cta-main" onclick="window.location.href='order.html'">Order Now 🍕</button>
+      <a href="#menu" class="btn-cta-ghost">Explore Menu →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">50K+</div><div class="stat-lab">Happy Customers</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><div class="stat-num">4.9★</div><div class="stat-lab">Avg Rating</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><div class="stat-num">30min</div><div class="stat-lab">Delivery</div></div>
+    </div>
+  </div>
+
+
+  <div class="floating-pizza-container">
+  <img src="images/4.jpeg" class="side-floating-pizza" alt="Floating Pizza">
+</div>
+
+
+ 
+  <div>
+    
+  </div>id="home" class="hero-section" style="position: relative; overflow: hidden;">
+  
+  <video autoplay loop muted playsinline class="bg-video">
+    <source src="images/2026-05-23_20-08-16_0.mp4" type="video/mp4">
+  </video>
+  
+  <div class="video-overlay"></div>
+
+  <div class="hero-content">
+    </div>
+
+
+
+  <!-- <div class="hero-pizza-float">
+    <div class="floating-pizza-wrap">
+      <div class="hero-pizza-glow"></div>
+      <div class="hero-pizza-emoji">🍕</div>
+      <div class="floating-topping t1">🧀</div>
+      <div class="floating-topping t2">🌶️</div>
+      <div class="floating-topping t3">🍄</div>
+      <div class="floating-topping t4">🫒</div>
+    </div> -->
+
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+
+      <div class="about-grid">
+        <div class="about-visual-compact">
+          <div class="about-img-frame-small">
+            <img src="ChatGPT Image May 24, 2026, 11_46_49 AM.png" class="about-image-small" alt="About PizzaFire">
+            <div class="about-badge-small">Est. 2019</div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div class="section-eyebrow">Our Story</div>
+
+          <h2 class="section-title">
+            Born From Fire,<br>
+            <span class="accent-text">Made With Love</span>
+          </h2>
+
+          <p class="about-desc">
+            PizzaFire started in a tiny kitchen in 2019 with one obsession:
+            making the perfect pizza. Founder Musab Khan spent years perfecting
+            his hand-stretched dough recipe, importing San Marzano tomatoes,
+            and sourcing the finest mozzarella.
+          </p>
+
+          <p class="about-desc">
+            Today, we serve hundreds of pies a day — but every single one still
+            feels personal. Because when you eat here, you're not just having
+            pizza. You're having <em>our</em> pizza.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feat"><span>🌿</span> Fresh Ingredients Daily</div>
+            <div class="about-feat"><span>🔥</span> Wood-Fire Oven at 800°F</div>
+            <div class="about-feat"><span>👨‍🍳</span> Master Pizzaiolos</div>
+            <div class="about-feat"><span>🚴</span> 30-Minute Delivery</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- ===== MENU ===== -->
+      <section id="menu" class="menu-section">
+
+         <div class="section-container">
+    <h2 class="section-title">EXPLORE OUR <span class="gradient-text">PREMIUM MENU</span></h2>
+    <p class="section-subtitle"></p>
+
+          <div class="menu-category-tabs-container">
+            <button class="menu-tab-btn active" id="tab-pizza" onclick="filterMenuCategory('pizza')">Premium
+              Pizza</button>
+            <button class="menu-tab-btn" id="tab-garlic-breads" onclick="filterMenuCategory('garlic-breads')">Garlic
+              Breads</button>
+            <button class="menu-tab-btn" id="tab-sandwiches" onclick="filterMenuCategory('sandwiches')">Pizza
+              Sandwiches</button>
+            <button class="menu-tab-btn" id="tab-desserts" onclick="filterMenuCategory('desserts')">Sweet
+              Desserts</button>
+            <button class="menu-tab-btn" id="tab-beverages" onclick="filterMenuCategory('beverages')">Cold
+              Beverages</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="masterMenuGrid">
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Fajita Max Pizza', 'images/pizza 1.jpeg', 'Sizzling hot fajita chicken chunks, crunchy premium bell peppers, sweet onion rings, and a double blanket of fresh melting mozzarella layer built on our signature hand-tossed artisan live-fire golden crust.', 1299)">
+            <div class="product-img-container"><img src="images/pizza 1.jpeg" alt="Fajita Max Pizza"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Fajita Max Pizza</h3>
+              <p>Sizzling chicken fajita chunks, crunchy premium bell peppers, fresh onion rings, and heavy melting
+                mozzarella over signature live-fire crust base layers.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,299</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Chicken Tikka Feast', 'images/pizza 3 (4).jpeg', 'Traditional hot smoked chicken tikka cubes packed with authentic local organic spices, ring onions, fresh cilantro leaves, and savory artisan marinara sauce base layer.', 1299)">
+            <div class="product-img-container"><img src="images/pizza 3 (4).jpeg" alt="Chicken Tikka Feast"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Chicken Tikka Feast</h3>
+              <p>Smoked spicy tikka chunks, traditional sweet onions, fresh cilantro toppings, and premium local organic
+                melted cheese layers with artisan sauces.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,299</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Pepperoni Blast', 'images/PIZZA 11.jpeg', 'Double layers of spicy crisp beef pepperoni slices locked flawless with extra loaded premium mozzarella cheese strings, Italian herb dust, and perimeter cheese toppings.', 1499)">
+            <div class="product-img-container"><img src="images/PIZZA 11.jpeg" alt="Pepperoni Blast"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Pepperoni Blast</h3>
+              <p>Double crisp beef pepperoni slices, heavily loaded mozzarella strings, premium oregano blend seasoning,
+                and dynamic crunchy edges built fresh.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,499</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Euro Supreme', 'images/PIZZA 7.jpeg', 'Smoked chicken capsicum cubes, black sliced Spanish olives, sweet golden corn kernels, dynamic fresh wild mushrooms, and a delicate spread of house vinaigrette paste.', 1399)">
+            <div class="product-img-container"><img src="images/PIZZA 7.jpeg" alt="Euro Supreme"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Euro Supreme</h3>
+              <p>Smoked chicken capsicum cubes, black sliced olives, sweet corn kernels, dynamic fresh mushrooms, and
+                signature white ranch core dressing sauce.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,399</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Creamy Mughlai', 'images/PIZZA 8.jpeg', 'Rich creamy royal Mughlai white sauce base, tender grilled green malai boti chicken chunks, mild white onions, and royal white cheddar cheese block glaze overrides.', 1350)">
+            <div class="product-img-container"><img src="images/PIZZA 8.jpeg" alt="Creamy Mughlai"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Creamy Mughlai</h3>
+              <p>Rich creamy white sauce base, grilled green malai boti chunks, mild sweet white onions, and royal
+                melted white cheese matrix topping setups.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,350</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Cheesy Margherita', 'images/PIZZA 9.jpeg', 'Pure classic melted Italian mozzarella block base, fresh sliced organic vine tomatoes, harvested organic basil leaf cuts, and extra virgin cold-pressed olive oil drizzle lines.', 1150)">
+            <div class="product-img-container"><img src="images/PIZZA 9.jpeg" alt="Cheesy Margherita"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Cheesy Margherita</h3>
+              <p>Pure classic melted mozzarella block base, fresh organic tomato slices, hand-torn basil leaves, and
+                premium olive oil seasoning layout design.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,150</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('Fiery Hot Peri', 'images/PIZZA 10.jpeg', 'Shredded roasted peri chicken breast chunks doused in hot blazing authentic South African peri peri chili sauce with spicy green jalapeno slices and red pepper seasoning.', 1299)">
+            <div class="product-img-container"><img src="images/PIZZA 10.jpeg" alt="Fiery Hot Peri"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Fiery Hot Peri</h3>
+              <p>Shredded hot peri chicken chunks doused in authentic African peri peri sauce with green jalapeno layers
+                and spicy crust parameters.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,299</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="pizza"
+            onclick="openMenuDetails('BBQ Smoking Grill', 'images/pizza 2.jpeg', 'Charcoal grilled barbecue chicken meat pieces, thin ring sweet red onions, dynamic cilantro leaves, and our signature smoky sweet hickory barbecue glaze overlay matrix.', 1390)">
+            <div class="product-img-container"><img src="images/pizza 2.jpeg"
+                alt="BBQ Smoking Grill" class="product-card-img"></div>
+            <div class="product-info">
+              <h3>BBQ Smoking Grill</h3>
+              <p>Charcoal grilled chicken meat pieces, ring red onions, sharp melting cheddar strings, and signature
+                sweet smoky barbecue drizzle glazes.</p>
+              <div class="product-price-row"><span class="price">Rs. 1,390</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Classic Garlic Toast', 'images/garlic 5.jpeg', 'Freshly baked artisan baguette slices rubbed with real whipped garlic butter paste, crushed sea salt, and fresh organic parsley seasoning flakes.', 299)">
+            <div class="product-img-container"><img src="images/garlic 5.jpeg" alt="Garlic Toast"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Classic Garlic Toast</h3>
+              <p>Artisan baguette slices rubbed with authentic garlic butter paste and fresh organic parsley seasoning
+                flakes for starters.</p>
+              <div class="product-price-row"><span class="price">Rs. 299</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Supreme Cheese Loaf', 'images/galrlic 6.jpeg', 'Thick bread loaf slices loaded inside with roasted garlic butter spread and heavy melted stringy gold mozzarella cheese block layers.', 399)">
+            <div class="product-img-container"><img src="images/galrlic 6.jpeg" alt="Supreme Cheese Loaf"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Supreme Cheese Loaf</h3>
+              <p>Thick bread slices loaded with intense garlic spread and melted stringy gold mozzarella core blocks
+                baked fresh.</p>
+              <div class="product-price-row"><span class="price">Rs. 399</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Jalapeno Cheese Sticks', 'images/garlic7.jpeg', 'Crispy pan-baked dough lines coated with hot diced jalapeno bits, rustic garlic herb oils, and a deep melt of golden cheddar strings.', 450)">
+            <div class="product-img-container"><img src="images/garlic7.jpeg" alt="Jalapeno Cheese Sticks"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Jalapeno Cheese Sticks</h3>
+              <p>Crispy dough lines baked with hot diced jalapeno bits, garlic oil, and melted sharp golden cheddar
+                blends.</p>
+              <div class="product-price-row"><span class="price">Rs. 450</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Pepperoni Garlic Twists', 'images/galic 8.jpeg', 'Hand twisted fresh dough bread rolls packed with pure garlic cream paste, minced spicy beef pepperoni slices, and parmesan cheese dust particles.', 499)">
+            <div class="product-img-container"><img src="images/galic 8.jpeg" alt="Pepperoni Garlic Twists"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Pepperoni Garlic Twists</h3>
+              <p>Hand twisted bread rolls filled with pure garlic paste, mozzarella, and minced spicy pepperoni overlay
+                lines.</p>
+              <div class="product-price-row"><span class="price">Rs. 499</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Herbs Mozzarella Sticks', 'images/garlic 9.jpeg', 'Deep fried crisp golden breaded stick layout filled with premium stringy mozzarella matrix core block, served with a sweet marinara dip container.', 420)">
+            <div class="product-img-container"><img src="images/garlic 9.jpeg" alt="Herbs Mozzarella Sticks"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Herbs Mozzarella Sticks</h3>
+              <p>Deep fried crisp golden breaded lines filled with maximum stringy premium mozzarella core matrix
+                blocks.</p>
+              <div class="product-price-row"><span class="price">Rs. 420</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Cheesy Stuffed Baguette', 'images/garlic3.jpeg', 'Artisan hollowed out French baguette packed inside with melting garlic butter spread, premium mozzarella, and sharp English cheddar mix.', 550)">
+            <div class="product-img-container"><img src="images/garlic3.jpeg" alt="Cheesy Stuffed Baguette"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Cheesy Stuffed Baguette</h3>
+              <p>Artisan baguette packed inside with melting garlic butter spread, mozzarella strings, and sharp cheddar
+                mix layers.</p>
+              <div class="product-price-row"><span class="price">Rs. 550</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Parmesan Butter Knots', 'images/galic 1.jpeg', 'Fluffy soft dough knots baked with melted pure pasture butter base, minced garlic pods, and dense premium parmesan cheese dust shavings.', 370)">
+            <div class="product-img-container"><img src="images/galic 1.jpeg" alt="Parmesan Butter Knots"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Parmesan Butter Knots</h3>
+              <p>Fluffy soft dough knots baked with melted pure butter, minced garlic, and rich parmesan dust shavings
+                fresh.</p>
+              <div class="product-price-row"><span class="price">Rs. 370</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="garlic-breads"
+            onclick="openMenuDetails('Fajita Stuffed Cheese Bread', 'images/garlic 11.jpeg', 'Mini artisan flatbread logs loaded heavily inside with spicy chicken fajita cubes, melting white premium cheese, and a rich garlic marinade overlay.', 599)">
+            <div class="product-img-container"><img src="images/garlic 11.jpeg" alt="Fajita Stuffed Cheese Bread"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Fajita Cheese Bread</h3>
+              <p>Mini flatbread logs loaded inside with chicken fajita cubes, melting cheese strings, and premium garlic
+                marinade.</p>
+              <div class="product-price-row"><span class="price">Rs. 599</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Tikka Supreme Sandwich', 'images/sand 1.jpeg', 'Artisan panini pressed bread layout packed with dynamic hot tikka chicken shreds, melting mozzarella layers, and special house marinara pizza sauce.', 499)">
+            <div class="product-img-container"><img src="images/sand 1.jpeg" alt="Tikka Supreme Sandwich"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Tikka Supreme Sandwich</h3>
+              <p>Panini pressed bread packed with dynamic tikka chicken shreds, hot pizza sauce, and melting mozzarella
+                layers.</p>
+              <div class="product-price-row"><span class="price">Rs. 499</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Fajita Melt Panini', 'images/sand2.jpeg', 'Grilled sourdough panini sub loaded with sautéed fajita chicken chunks, crisp bell peppers, sweet onions, and a heavy buttermilk ranch sauce drizzle.', 520)">
+            <div class="product-img-container"><img src="images/sand2.jpeg" alt="Fajita Melt Panini"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Fajita Melt Panini</h3>
+              <p>Grilled panini sub loaded with sautéed fajita chicken chunks, capsicums, and heavy ranch drizzle
+                fields.</p>
+              <div class="product-price-row"><span class="price">Rs. 520</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('BBQ Smoke Overload Sandwich', 'images/sand4.jpeg', 'Toasted submarine sandwich stuffed with smoky charcoal barbecue shredded breast cubes, ring red onions, and extra layers of melting sharp cheddar.', 540)">
+            <div class="product-img-container"><img src="images/sand4.jpeg" alt="BBQ Smoke Overload"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>BBQ Smoke Overload</h3>
+              <p>Toasted sub sandwich stuffed with smoky barbecue chicken breast cubes, red onions, and loaded cheddar
+                melt lines.</p>
+              <div class="product-price-row"><span class="price">Rs. 540</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Double Pepperoni Melt', 'images/sand6.jpeg', 'Crisp sourdough crust layers clamping multiple rows of spicy beef pepperoni slices, classic marinara sauce paste, and double loaded mozzarella strings.', 599)">
+            <div class="product-img-container"><img src="images/sand6.jpeg" alt="Double Pepperoni Melt"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Double Pepperoni Melt</h3>
+              <p>Sourdough layers clamping multiple rows of beef pepperoni slices, rich marinara paste, and thick hot
+                strings.</p>
+              <div class="product-price-row"><span class="price">Rs. 599</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Dynamic Italian Sub', 'images/send7.jpeg', 'Submarine bread baguette loaded with premium chicken salami layers, beef pepperoni slices, black olives, green bell peppers, and melted mozzarella core matrices.', 580)">
+            <div class="product-img-container"><img src="images/send7.jpeg" alt="Dynamic Italian Sub"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Dynamic Italian Sub</h3>
+              <p>Submarine bread loaded with chicken salami layers, pepperoni slices, black olives, and green bell
+                pepper blends.</p>
+              <div class="product-price-row"><span class="price">Rs. 580</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Creamy Ranch Sandwich', 'images/send8.jpeg', 'Artisan toasted layout bread housing rich cream base ranch chicken chunks, crispy capsicums, and a double layer layout of melted white cheese block sheets.', 530)">
+            <div class="product-img-container"><img src="images/send8.jpeg" alt="Creamy Ranch Sandwich"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Creamy Ranch Sandwich</h3>
+              <p>Toasted bread housing premium cream base ranch chicken chunks and double melted white cheese block
+                sheet layouts.</p>
+              <div class="product-price-row"><span class="price">Rs. 530</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Peri Peri Blaster Sub', 'images/send9.jpeg', 'Long soft French bread baguette baked with peri peri sauce marinated chicken cubes, spicy green jalapeno bits, and melted yellow sharp cheddar cheese mix.', 550)">
+            <div class="product-img-container"><img src="images/saend5.jpeg" alt="Peri Peri Blaster Sub"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Peri Peri Blaster Sub</h3>
+              <p>French bread baked with peri sauce marinated chicken cubes, spicy jalapenos, and cheddar cheese mix
+                lines.</p>
+              <div class="product-price-row"><span class="price">Rs. 550</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="sandwiches"
+            onclick="openMenuDetails('Garden Green Cheese Sandwich', 'images/send 10.jpeg', 'Toasted bread filled with our signature red herb marinara sauce, sliced mushrooms, sweet gold corn, black olives, and double mozzarella block melts.', 450)">
+            <div class="product-img-container"><img src="images/send 10.jpeg" alt="Garden Green Cheese"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Garden Green Cheese</h3>
+              <p>Bread filled with signature red herb sauce, sliced wild mushrooms, sweet corn, olives, and double
+                cheese blends.</p>
+              <div class="product-price-row"><span class="price">Rs. 450</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Choco Lava Skillet Cake', 'images/dessert1.jpg', 'Freshly baked warm chocolate cake container featuring an intensely oozing liquid gourmet dark Belgian chocolate center core matrix system.', 399)">
+            <div class="product-img-container"><img src="images/dessert1.jpg" alt="Choco Lava Skillet Cake"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Choco Lava Skillet</h3>
+              <p>Warm chocolate cake container with an oozing liquid gourmet dark chocolate center core served hot.</p>
+              <div class="product-price-row"><span class="price">Rs. 399</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Nutella Stuffed Calzone', 'images/dessert2.jpg', 'Folded artisan sweet dessert pizza dough packed completely with rich warm hazelnut chocolate Nutella spread paste and powdered sugar dust toppings.', 499)">
+            <div class="product-img-container"><img src="images/dessert2.jpg" alt="Nutella Stuffed Calzone"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Nutella Calzone</h3>
+              <p>Folded artisan sweet dessert pizza dough packed with rich warm premium hazelnut Nutella spread cream
+                maps.</p>
+              <div class="product-price-row"><span class="price">Rs. 499</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Lotus Biscoff Pizza Dough', 'images/dessert3.jpg', 'Baked sweet thin crust smothered completely in warm cookie butter Lotus Biscoff cream paste and heavily loaded with crunch Biscoff biscuit crumbs.', 599)">
+            <div class="product-img-container"><img src="images/dessert3.jpg" alt="Lotus Biscoff Pizza Dough"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Lotus Biscoff Crust</h3>
+              <p>Sweet thin crust smothered in warm cookie butter lotus cream paste and crunchy biscoff crumbs overlay
+                setups.</p>
+              <div class="product-price-row"><span class="price">Rs. 599</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Warm Fudge Brownie Piece', 'images/dessert4.jpg', 'Rich heavy premium cocoa dark fudge brownie slice topped with dense warm hot chocolate syrup glaze drizzle lines and chocolate chips.', 280)">
+            <div class="product-img-container"><img src="images/dessert4.jpg" alt="Warm Fudge Brownie Piece"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Warm Fudge Brownie</h3>
+              <p>Rich cocoa dark fudge brownie slice topped with dense warm hot chocolate glaze syrup drizzle elements.
+              </p>
+              <div class="product-price-row"><span class="price">Rs. 280</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('New York Baked Cheesecake', 'images/dessert5.jpg', 'Classic premium dense baked cream cheese pie slice resting over a buttery rich Graham cracker cookie base crust layer with strawberry glaze syrups.', 450)">
+            <div class="product-img-container"><img src="images/dessert5.jpg" alt="New York Baked Cheesecake"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>NY Baked Cheesecake</h3>
+              <p>Dense baked cream cheese pie slice resting over a graham cracker cookie base layer structure fields.
+              </p>
+              <div class="product-price-row"><span class="price">Rs. 450</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Cinnamon Dough Twists', 'images/dessert6.jpg', 'Soft sweet oven baked dough strips rolled completely inside dark cinnamon brown sugar powder mix and coated with sweet royal white glaze syrup.', 320)">
+            <div class="product-img-container"><img src="images/dessert6.jpg" alt="Cinnamon Dough Twists"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Cinnamon Dough Twists</h3>
+              <p>Soft baked dough strips rolled inside cinnamon sugar powder mix and sweet white glaze toppings.</p>
+              <div class="product-price-row"><span class="price">Rs. 320</span><span class="view-details-tag">View
+                  Details <i class="fas fa-arrow-right"></i></span></div>
+            </div>
+          </div>
+
+          <div class="product-card menu-item-node" data-category="desserts"
+            onclick="openMenuDetails('Red Velvet Layer Slice', 'images/dessert7.jpg', 'Gourmet red velvet cake layered slice featuring smooth organic white cream cheese frosting, sweet cocoa notes, and red velvet crumb toppings.', 420)">
+            <div class="product-img-container"><img src="images/dessert7.jpg" alt="Red Velvet Layer Slice"
+                class="product-card-img"></div>
+            <div class="product-info">
+              <h3>Red Velvet Slice</h3>
+              <p>Gourmet red velvet cake slice featuring smooth organic white cream cheese frosting layers
+                beautifully.', 420)">
+            </div>
+            <div class="product-price-row"><span class="price">Rs. 420</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Chilled Soft Can', 'images/drink1.jpg', 'Sub-zero frozen aluminum tin can soda selections matching perfectly with your hot freshly baked artisan live fire food items.', 120)">
+          <div class="product-img-container"><img src="images/drink1.jpg" alt="Chilled Soft Can"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Chilled Soft Can</h3>
+            <p>Sub-zero frozen tin can soda selections matching perfectly with your hot freshly baked food maps.</p>
+            <div class="product-price-row"><span class="price">Rs. 120</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Fresh Mint Lemonade', 'images/drink2.jpg', 'Freshly blended refreshing cocktail juice drink made with clean mint leaf pure extract, pressed lime juice, sugar syrups, and crushed ice blocks.', 199)">
+          <div class="product-img-container"><img src="images/drink2.jpg" alt="Fresh Mint Lemonade"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Fresh Mint Lemonade</h3>
+            <p>Freshly blended cocktail drink made with mint leaf extract, lime juice, and sparkling soda ice blocks.
+            </p>
+            <div class="product-price-row"><span class="price">Rs. 199</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Mineral Water Bottle', 'images/drink3.jpg', 'Purely filtered natural crisp drinking mineral hydration water bottle served perfectly chilled for premium standard safety setups.', 70)">
+          <div class="product-img-container"><img src="images/drink3.jpg" alt="Mineral Water Bottle"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Mineral Water Bottle</h3>
+            <p>Purely filtered crisp drinking mineral water bottle served perfectly chilled for direct hydration grids.
+            </p>
+            <div class="product-price-row"><span class="price">Rs. 70</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Blue Lagoon Mojito', 'images/drink4.jpg', 'Premium blue curacao flavor extract shaken with muddled fresh lime chunks, sweet mint sheets, carbonated water, and sparkling white tonics.', 250)">
+          <div class="product-img-container"><img src="images/drink4.jpg" alt="Blue Lagoon Mojito"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Blue Lagoon Mojito</h3>
+            <p>Blue curacao flavor extract shaken with fresh lime chunks, mint sheets, and sparkling white tonic
+              layouts.</p>
+            <div class="product-price-row"><span class="price">Rs. 250</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Chilled Large Pet Bottle', 'images/drink5.jpg', 'One point five litre standard family size cold storage soda pet bottle selections to satisfy large grouping meal settings effortlessly.', 220)">
+          <div class="product-img-container"><img src="images/drink5.jpg" alt="Chilled Large Pet Bottle"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Chilled Large Pet Bottle</h3>
+            <p>1.5 Litre standard family size cold storage soda pet bottle to satisfy large grouping dinner tables.</p>
+            <div class="product-price-row"><span class="price">Rs. 220</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Premium Piña Colada', 'images/drink6.jpg', 'Creamy rich blended tropical frozen treat crafted from authentic pineapple pure fruit juices, rich coconut cream extracts, and crashed milkshakes.', 260)">
+          <div class="product-img-container"><img src="images/drink6.jpg" alt="Premium Piña Colada"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Fresh Piña Colada</h3>
+            <p>Creamy rich blended treat crafted from pineapple juices, real coconut cream extracts, and crashed ice
+              structures.</p>
+            <div class="product-price-row"><span class="price">Rs. 260</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Iced Vanilla Latte', 'images/drink7.jpg', 'Cold brewed rich premium espresso double shot infused with aromatic sweet organic vanilla bean syrup layers over whole fat cold milk blocks.', 280)">
+          <div class="product-img-container"><img src="images/drink7.jpg" alt="Iced Vanilla Latte"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Iced Vanilla Latte</h3>
+            <p>Cold brewed rich espresso shot infused with aromatic sweet vanilla syrup over creamy whole milk blocks.
+            </p>
+            <div class="product-price-row"><span class="price">Rs. 280</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Peach Sparkling Tea', 'images/drink8.jpg', 'Refreshing chilled organic black tea extract boosted with sweet natural peach syrup juices, fresh lime drops, and fine white soda lines.', 190)">
+          <div class="product-img-container"><img src="images/drink8.jpg" alt="Peach Sparkling Tea"
+              class="product-card-img"></div>
+          <div class="product-info">
+            <h3>Peach Sparkling Tea</h3>
+            <p>Refreshing chilled black tea extract boosted with natural peach juices and fine fizzy soda streams.</p>
+            <div class="product-price-row"><span class="price">Rs. 190</span><span class="view-details-tag">View Details
+                <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+
+        
+        <div class="product-card menu-item-node" data-category="beverages"
+          onclick="openMenuDetails('Chilled Large Pet Bottle', 'images/drink5.jpg', 'One point five litre standard family size cold storage soda pet bottle selections to satisfy large grouping meal settings effortlessly.', 220)">
+          <div class="product-img-container"><img src="
+             alt="Chilled Large Pet Bottle"
+              class="product-card-img"></div>
+          <div class="product-info">
+
+    </div>
+  </section>
+
+  <div id="menuDetailModal" class="menu-detail-modal-overlay">
+    <div class="menu-detail-card-wrapper">
+      <button class="menu-detail-close-btn" onclick="closeMenuDetails()">&times;</button>
+
+      <div class="menu-detail-left-content">
+        <h2 id="modalMenuTitle" class="md-product-title">Product Name Loading...</h2>
+        <p id="modalMenuDesc" class="md-product-desc">Loading structural detailed material recipe matrix sequence
+          configurations...</p>
+
+        <div class="md-pricing-segment">
+          <span class="md-label">Price:</span>
+          <span id="modalMenuPrice" class="md-actual-price">Rs. 0</span>
+        </div>
+
+        <div class="md-quantity-segment">
+          <span class="md-label">Quantity:</span>
+          <div class="md-qty-counter-box">
+            <button class="md-counter-btn" onclick="adjustMenuQuantity(-1)">-</button>
+            <input type="number" id="modalMenuQty" value="1" min="1" readonly>
+            <button class="md-counter-btn" onclick="adjustMenuQuantity(1)">+</button>
+          </div>
+        </div>
+
+        <div class="md-action-gateways">
+          <button class="md-btn-cart-add" onclick="submitMenuToCart()"><i class="fas fa-shopping-basket"></i> Add To
+            Cart</button>
+          <button class="md-btn-buy-now" onclick="triggerMenuDirectBuy()"><i class="fas fa-bolt"></i> Buy Now</button>
+        </div>
+      </div>
+
+      <div class="menu-detail-right-graphic">
+        <img id="modalMenuImg" src="images/pizza (1).jpeg" alt="Selected Product Asset" class="md-display-img">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Gallery section  -->
+
+
+  <div class="section-container">
+    <h2 class="section-title">Our Premium <span class="gradient-text">Gallery</span></h2>
+    <p class="section-subtitle">Swipe or click next to explore our fire-crafted menu in 3D stack.</p>
+
+    <div class="stack-area">
+
+
+
+      <!-- ABOUT CAROUSEL START -->
+      <div class="carousel-section-area" id="area">
+        <div class="carousel-container">
+          <div class="carousel" id="carousel">
+
+            <div class="card" style="--i:0;">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="card-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400');">
+                  </div>
+                  <div class="card-title">Our Story 📜</div>
+                </div>
+                <div class="card-back">
+                  <h3>How We Started</h3>
+                  <p>PizzaFire began with a simple dream: to bring authentic wood-fired artisan pizza to Karachi.</p>
+                  <button class="btn-card">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="--i:1;">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="card-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=400');">
+                  </div>
+                  <div class="card-title">Our Chefs 👨‍🍳</div>
+                </div>
+                <div class="card-back">
+                  <h3>Master Pizzaiolos</h3>
+                  <p>Expert chefs hand-stretch every dough and prepare every pizza with passion.</p>
+                  <button class="btn-card">Meet Team</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="--i:2;">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="card-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&q=80&w=400');">
+                  </div>
+                  <div class="card-title">Ingredients 🍅</div>
+                </div>
+                <div class="card-back">
+                  <h3>Pure & Fresh</h3>
+                  <p>Fresh mozzarella, imported tomatoes and premium ingredients every day.</p>
+                  <button class="btn-card">View Quality</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="--i:3;">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="card-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=400');">
+                  </div>
+                  <div class="card-title">The Fire 🔥</div>
+                </div>
+                <div class="card-back">
+                  <h3>800° Wood Oven</h3>
+                  <p>Baked in under 90 seconds in our stone ovens for a perfect crust.</p>
+                  <button class="btn-card">See Oven</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="--i:4;">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="card-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&w=400');">
+                  </div>
+                  <div class="card-title">Our Goal 🎯</div>
+                </div>
+                <div class="card-back">
+                  <h3>100% Satisfaction</h3>
+                  <p>Hot, fresh and unforgettable pizza experience every single time.</p>
+                  <button class="btn-card">Our Vision</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT CAROUSEL END -->
+
+    </div>
+    </section>
+
+    <!-- <section class="gallery-section" id="gallery">
+  <div class="section-container">
+    <h2 class="section-title">Our Premium <span class="gradient-text">Gallery</span></h2>
+    <p class="section-subtitle">Swipe or click next to explore our fire-crafted menu in 3D stack.</p>
+    
+    <div class="stack-area">
+      <div class="stack-container" id="cardStack">
+        
+        <div class="stack-card">
+          <img src="images/download (1).jpg" alt="Pepperoni Delight">
+          <div class="card-info">
+            <h3>Pepperoni Delight 🍕</h3>
+            <p>Loaded with premium mozzarella and crispy pepperoni slices.</p>
+          </div>
+        </div>
+        
+        <div class="stack-card">
+          <img src="images/download (2).jpg" alt="Cheesy Lava">
+          <div class="card-info">
+            <h3>Cheesy Lava 🧀</h3>
+            <p>A burst of rich molten cheese oozing from every hot slice.</p>
+          </div>
+        </div>
+        
+        <div class="stack-card">
+          <img src="images/download.jpg" alt="Woodfired Oven">
+          <div class="card-info">
+            <h3>Woodfired Veggie 🔥</h3>
+            <p>Smoky roasted bell peppers, olives, onions, and fresh basil.</p>
+          </div>
+        </div>
+        
+        <div class="stack-card">
+          <img src="images/IMG-20260517-WA0017_2-removebg-preview.png" alt="BBQ Chicken">
+          <div class="card-info">
+            <h3>BBQ Chicken Twist 🍗</h3>
+            <p>Tender chicken cubes tossed in smoky hickory BBQ sauce.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="stack-controls">
+      <button class="btn-stack" id="stackNextBtn">Next Slice 🍕</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== OFFERS ===== -->
+
+      <div class="section-container">
+    <h2 class="section-title">Our Premium <span class="gradient-text">offers</span></h2>
+    <p class="section-subtitle">Limited Offers Avilable</p>
+
+
+    <section class="offers-section" id="offers">
+      <div class="offer-card offer-gold">
+        <div class="offer-badge">LIMITED</div>
+
+        <img src="images/AQNiyMXz-PyT32BnrMCBnymY8DI687Et7CAQmu0BTg4eAlVqr73rFqmolfFm18aBH-qqu46tWR26tcYrTmOEawkp.jpg"
+          alt="Buy 1 Get 1" class="offer-image">
+
+        <h3>Buy 1 Get 1 Free</h3>
+        <p>Every Tuesday — order any large pizza and get a second one absolutely free!</p>
+        <div class="offer-code">Code: <strong>TWIN2X</strong></div>
+        <button class="btn-offer" onclick="location.href='order.html'">Grab Deal →</button>
+      </div>
+
+      <div class="offer-card offer-red">
+        <div class="offer-badge hot">🔥 HOT</div>
+
+        <img src="images/AQNdWAzsy4EfWUfSF4Gmt6cic2Xw89g3ANqLxpcIYW-AMft8cXkJsGMtghVzIFEaepsNLmYoKIRKy41fhgIbJEIu.jpg"
+          alt="Mega Combo" class="offer-image">
+
+        <h3>Mega Combo Deal</h3>
+        <p>1 Large Pizza + 2 Burgers + Fries + 2 Drinks for just $34.99!</p>
+        <div class="offer-code">Code: <strong>MEGAFIRE</strong></div>
+        <button class="btn-offer" onclick="location.href='order.html'"></button>Grab Deal →</button>
+      </div>
+
+      <div class="offer-card offer-dark">
+        <div class="offer-badge new-badge">NEW</div>
+
+        <img src="images/4 sitems.jpg" alt="First Order" class="offer-image">
+
+        <h3>First Order 20% Off</h3>
+        <p>New customer? Welcome to the family. Get 20% off your very first order!</p>
+        <div class="offer-code">Code: <strong>WELCOME20</strong></div>
+        <button class="btn-offer" onclick="location.href='order.html'">Grab Deal →</button>
+      </div>
+    </section>
+
+
+
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">What People Say</div>
+          <h2 class="section-title">Our Customers<br><span class="accent-text">Are Obsessed</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"I've tried every pizza place in the city. PizzaFire is on another level. The crust
+              alone is worth it — crispy outside, chewy inside. Absolute perfection."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AK</div>
+              <div>
+                <div class="testi-name">Ahmed Khan</div>
+                <div class="testi-loc">📍 Karachi</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card testi-featured">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"The pizza builder is SO fun! My kids love picking their own toppings online. And
+              delivery was in 25 minutes — insane! Will definitely order again."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SF</div>
+              <div>
+                <div class="testi-name">Sara Farooq</div>
+                <div class="testi-loc">📍 Lahore</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"The Diablo Inferno pizza is FIRE (literally). I'm obsessed. The spice level is real,
+              the flavor is incredible. Nothing else compares."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">BM</div>
+              <div>
+                <div class="testi-name">Bilal Mirza</div>
+                <div class="testi-loc">📍 Islamabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===== LOCATION ===== -->
+    <section class="location-section" id="location">
+      <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Find Us <Br><span class="gradient-text">Find Us Here📍</span></h2>
+   
+          <p class="location-subtitle">Come visit us — or let us come to you.</p>
+        </div>
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <div class="info-label">Address</div>
+                <div class="info-value">Plot 47, Zamzama Boulevard<br>Phase V, DHA, Karachi 75500</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">⏰</div>
+              <div>
+                <div class="info-label">Hours</div>
+                <div class="info-value">Mon–Thu: 11am – 11pm<br>Fri–Sun: 11am – 1am</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div>
+                <div class="info-label">Phone</div>
+                <div class="info-value">+92 300 1234567</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-value">hello@pizzafire.pk</div>
+              </div>
+            </div>
+            <a href="https://maps.google.com" target="_blank" class="btn-directions">
+              <i class="fas fa-map-marker-alt"></i> Get Directions
+            </a>
+          </div>
+          <div class="map-wrapper">
+            <div class="map-frame">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.0295984764!2d67.0699!3d24.8186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d7b5c29e5c3%3A0x78fc47e3a1c71c3b!2sDHA%20Phase%205%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1716000000000!5m2!1sen!2s"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <div class="footer-logo-title">
+            <img src="images/IMG-20260517-WA0017_2-removebg-preview.png" class="brand-logo-img" alt="PizzaFire Logo">
+            <h2>Shale<span class="orange-text">Pizzass</span></h2>
+          </div>
+          <p>Delivering authentic flavors since 1960. With over 1000 locations worldwide. Crafted with fire & love.</p>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Menu</h4>
+            <a href="#menu">Pizza</a>
+            <a href="#menu">Burgers</a>
+            <a href="#menu">Fries</a>
+            <a href="#menu">Drinks</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#about">About Us</a>
+            <a href="#offers">Offers</a>
+            <a href="#location">Locations</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PizzaFire. Made with 🔥 in Karachi.</span>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a class="whatsapp-float"
+      href="https://wa.me/923001234567?text=Hello%20PizzaFire!%20I%20want%20to%20place%20an%20order%20🍕"
+      target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span class="wa-tooltip">Order on WhatsApp!</span>
+    </a>
+
+    <!-- CART NOTIFICATION -->
+    <div class="cart-notification" id="cartNotif">
+      <div class="cart-notif-inner">
+        <span>🛒</span><span id="cartCount">0</span> item(s) in cart
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
